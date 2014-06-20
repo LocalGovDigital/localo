@@ -83,10 +83,10 @@ Few specifications exist for waste collections, and many organisations don't pub
 </ul>
 
 <div class="tab-content no-js">
-  <div class="tab-pane" id="count-schema" data-url="/schemas/waste-collection.json"></div>
-  <div class="tab-pane" id="count-context" data-url="/contexts/waste-collection.jsonld"></div>
-  <div class="tab-pane active" id="count-json" data-url="/examples/waste-collection.json"></div>
-  <div class="tab-pane" id="count-rdf" data-url="/examples/waste-collection.ttl"></div>
+  <div class="tab-pane" id="count-schema" data-url="{{ site.url }}/schemas/waste-collection.json"></div>
+  <div class="tab-pane" id="count-context" data-url="{{ site.url }}/contexts/waste-collection.jsonld"></div>
+  <div class="tab-pane active" id="count-json" data-url="{{ site.url }}/examples/waste-collection.json"></div>
+  <div class="tab-pane" id="count-rdf" data-url="{{ site.url }}/examples/waste-collection.ttl"></div>
 </div>
 
 <h1 id="code-lists">5. Code lists</h1>

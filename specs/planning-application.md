@@ -79,10 +79,10 @@ Few specifications exist for planning applications and associated information in
 </ul>
 
 <div class="tab-content no-js">
-  <div class="tab-pane" id="count-schema" data-url="/schemas/planning-application.json"></div>
-  <div class="tab-pane" id="count-context" data-url="/contexts/planning-application.jsonld"></div>
-  <div class="tab-pane active" id="count-json" data-url="/examples/planning-application.json"></div>
-  <div class="tab-pane" id="count-rdf" data-url="/examples/planning-application.ttl"></div>
+  <div class="tab-pane" id="count-schema" data-url="{{ site.url }}/schemas/planning-application.json"></div>
+  <div class="tab-pane" id="count-context" data-url="{{ site.url }}/contexts/planning-application.jsonld"></div>
+  <div class="tab-pane active" id="count-json" data-url="{{ site.url }}/examples/planning-application.json"></div>
+  <div class="tab-pane" id="count-rdf" data-url="{{ site.url }}/examples/planning-application.ttl"></div>
 </div>
 
 <h1 id="code-lists">5. Code lists</h1>
