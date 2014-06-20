@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Handling Duplicates | The Popolo Project
+title: Handling Duplicates | Localo
 id: appendix
 ---
 {% include navigation.html %}

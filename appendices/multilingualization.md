@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Multilingualization | The Popolo Project
+title: Multilingualization | Localo
 id: appendix
 ---
 {% include navigation.html %}
