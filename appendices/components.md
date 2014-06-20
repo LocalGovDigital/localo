@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Best Practices for Software Components | The Popolo Project
+title: Best Practices for Software Components | Localo
 id: appendix
 ---
 {% include navigation.html %}
