@@ -50,21 +50,22 @@ Specification development works by an open process and by rough consensus. [Part
 
 ## Specification
 
-Jump to a section below or start at the [beginning](/specs/).
+Jump to a section below or start at the [beginning]({{ site.url }}/specs/).
 
-1. [Scope](/specs/#scope)
-1. [Conformance](/specs/#conformance)
-1. [Use cases & requirements](/specs/#use-cases-and-requirements)
-1. [Standard reuse](/specs/#standard-reuse)
-1. [Classes and properties](/specs/#classes-and-properties)
+1. [Scope]({{ site.url }}/specs/#scope)
+1. [Conformance]({{ site.url }}/specs/#conformance)
+1. [Use cases & requirements]({{ site.url }}/specs/#use-cases-and-requirements)
+1. [Standard reuse]({{ site.url }}/specs/#standard-reuse)
+1. [Classes and properties]({{ site.url }}/specs/#classes-and-properties)
     1. People and organizations
-        1. [Waste collection]({{baseurl}}/specs/waste-collection.html)
+        1. [Waste collection]({{ site.url }}/specs/waste-collection.html)
+        2. [Planning application]({{ site.url }}/specs/planning-application.html)
 1. [Serialization](/specs/#serialization)
-    1. [JSON schema and examples](/specs/#schema-and-examples)
-    1. [Metadata serialization](/specs/#metadata-properties)
-    1. [Embedded JSON documents](/specs/#embedded-json-documents)
-    1. [JSON subschema](/specs/#subschema)
-1. [Change history](/specs/#history)
+    1. [JSON schema and examples]({{ site.url }}/specs/#schema-and-examples)
+    1. [Metadata serialization]({{ site.url }}/specs/#metadata-properties)
+    1. [Embedded JSON documents]({{ site.url }}/specs/#embedded-json-documents)
+    1. [JSON subschema]({{ site.url }}/specs/#subschema)
+1. [Change history]({{ site.url }}/specs/#history)
 
 
 <h2 id="participation">Participation</h2>
