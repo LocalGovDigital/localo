@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Data Model Patterns | The Popolo Project
+title: Data Model Patterns | Localo
 id: appendix
 ---
 {% include navigation.html %}
