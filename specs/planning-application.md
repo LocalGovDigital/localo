@@ -89,18 +89,10 @@ Few specifications exist for planning applications and associated information in
 
 ## Option
 
-Implementations <em class="rfc2119">may</em> use values from outside this list to reflect the diversity of waste collection options.
+Implementations <em class="rfc2119">may</em> use values from outside this list to reflect the diversity of planning application options.
 
-### Type
+### Status
 
-* `refuse`
-* `recycling`
-* `garden`
-* `food`
-
-### Frequency
-
-* `daily`
-* `weekly`
-* `fortnightly`
-* `monthly`
+* `approved`
+* `declined`
+* `postponed`
