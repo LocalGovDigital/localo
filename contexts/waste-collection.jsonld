@@ -1,0 +1,13 @@
+{
+  "Waste Collection": "http://www.w3.org/ns/localgov#WasteCollection",
+  "refuse": "http://www.w3.org/ns/opengov#RefuseCollection",
+  "recycling": "http://www.w3.org/ns/opengov#RecyclingCollection",
+  "garden": "http://www.w3.org/ns/opengov#GardenCollection",
+  "food": "http://www.w3.org/ns/opengov#FoodCollection",
+  "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+  "date": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+  "frequency": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+  "exception": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+  "allowed": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+  "disallowed": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+}

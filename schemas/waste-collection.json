@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema#",
+    "id": "http://localo.com/schemas/waste-collection.json#",
+    "title": "Waste Collection",
+    "description": "A description bin collection",
+    "type": "object",
+    "properties": {
+        "type": {
+            "description": "The type of waste to be collected",
+            "type": "string",
+            "required": true
+        },
+        "date": {
+            "description": "The date of the next collection",
+            "type": "date",
+            "required": true
+        },
+        "frequency": {
+            "description": "The frequency of the collection",
+            "type": "string",
+            "required": true
+        },
+        "exception": {
+            "description": "Is the next collection date outside of the normal collection frequency",
+            "type": "boolean",
+            "required": true
+        },
+        "allowed": {
+            "description": "A list of items allowed in the waste collection",
+            "type": ["string", null],
+            "required": true
+        },
+        "disallowed": {
+            "description": "A list of items not allowed in the waste collection",
+            "type": ["string", null],
+            "required": true
+        },
+
+    }
+}

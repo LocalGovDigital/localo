@@ -1,0 +1,8 @@
+{
+    "type": "refuse",
+    "date": 2014,
+    "frequency": "fornightly",
+    "exception": false,
+    "allowed": ["all"],
+    "disallowed": ["paint", "car batteries"]
+}
