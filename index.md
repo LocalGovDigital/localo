@@ -6,7 +6,7 @@ title: Localo
   <h1>Localo</h1>
 </div>
 
-This project's goal is to author, through community consensus, **international open government data specifications** relating to the legislative branch of government, so that civil society can spend less time transforming data and more time applying it to the problems they face. A related goal is to make it easier for civic developers to create government transparency, monitoring and engagement websites, by developing reusable open source components that implement the specifications. Although the data specification is designed primarily for open government use cases, many other use cases are supported.
+This project's goal is to author, through community consensus, **local government data specifications** relating to the services and information provided by local government. A related goal is to make it easier for civic developers to create additional software built on these standards.
 
 <h2 id="principles">Principles</h2>
 
@@ -58,18 +58,7 @@ Jump to a section below or start at the [beginning](/specs/).
 1. [Standard reuse](/specs/#standard-reuse)
 1. [Classes and properties](/specs/#classes-and-properties)
     1. People and organizations
-        1. [Person](/specs/person.html): [Name Component](/specs/person/name-component.html)
-        1. [Organization](/specs/organization.html)
-        1. [Membership](/specs/membership.html)
-        1. [Post](/specs/post.html)
-        1. [Contact Detail](/specs/contact-detail.html)
-    1. Geography
-        1. [Area](/specs/area.html)
-    1. Motions and voting
-        1. [Motion](/specs/motion.html)
-        1. [Vote Event](/specs/vote-event.html)
-        1. [Count](/specs/count.html)
-        1. [Vote](/specs/vote.html)
+        1. [Waste collection](/specs/waste-collection.html)
 1. [Serialization](/specs/#serialization)
     1. [JSON schema and examples](/specs/#schema-and-examples)
     1. [Metadata serialization](/specs/#metadata-properties)
@@ -77,32 +66,11 @@ Jump to a section below or start at the [beginning](/specs/).
     1. [JSON subschema](/specs/#subschema)
 1. [Change history](/specs/#history)
 
-**Appendices**
-
-1. [Example Popolo JSON documents](/appendices/examples.html)
-1. [Multilingualization](/appendices/multilingualization.html)
-1. [Adding metadata](/appendices/adding-metadata.html)
-1. [Handling duplicates](/appendices/handling-duplicates.html)
-1. [Survey of existing specifications](/appendices/survey.html)
-1. [Inventory of terms from the survey](/appendices/terms.html)
-1. [Data model patterns](/appendices/data-patterns.html) (semantics, succinctness, edge cases)
-1. [JSON serialization patterns](/appendices/json-patterns.html) (embedding, simplicity)
-1. [Best practices for software components](/appendices/components.html) (document identifiers, database isolation)
 
 <h2 id="participation">Participation</h2>
 
 Participation is free and open to anyone. These documents are **Working Drafts**. Their governance roughly follows the [W3C process](http://www.w3.org/community/about/agreements/).
 
-* Join the [W3C Open Government Community Group](http://www.w3.org/community/opengov/) and [subscribe to its mailing list](http://lists.w3.org/Archives/Public/public-opengov/) to discuss the project's development
-* Visit the [GitHub repository](https://github.com/opennorth/popolo-spec/tree/gh-pages), discuss [open issues](https://github.com/opennorth/popolo-spec/issues), and create pull requests
-* [Read Open North's blog post announcing the project](http://blog.opennorth.ca/2013/02/21/update-on-opengovernment/) for more context
+* Visit the [GitHub repository](https://github.com/LocalGovDigital/Localo/tree/gh-pages), discuss [open issues](https://github.com/LocalGovDigital/Localo/issues), and create pull requests
 
-Questions? Contact [james@opennorth.ca](mailto:james@opennorth.ca).
 
-## Implementation
-
-* [Pupa by Open Civic Data](https://github.com/opencivicdata/pupa): A Python package to create and validate civic data objects, underpinning the [Sunlight Foundation](http://sunlightfoundation.com/)'s work on government transparency at the local level.
-* [PopIt by mySociety](https://npmjs.org/package/popit-api): A Node.js package to make it simple "to start and maintain a public database of people, organisations and positions," part of mySociety's work on reusable software components.
-* [django-popolo by Openpolis](https://github.com/openpolis/django-popolo): A Django app that provides basic models and views for all classes in Popolo for use within a Django project or Openpolis' [REST API](https://github.com/openpolis/popolorest).
-* [Pupa.rb by Open North](https://github.com/opennorth/pupa-ruby): A Ruby fork of Pupa that implements an Extract, Transform and Load (ETL) process to scrape data from online sources, transform it, and write it to a database.
-* [Popolo Engine by Open North](https://github.com/opennorth/popolo-engine): A Ruby on Rails engine that provides basic models, controllers and views for all classes in Popolo.
