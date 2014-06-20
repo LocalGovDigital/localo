@@ -58,7 +58,7 @@ Jump to a section below or start at the [beginning](/specs/).
 1. [Standard reuse](/specs/#standard-reuse)
 1. [Classes and properties](/specs/#classes-and-properties)
     1. People and organizations
-        1. [Waste collection](/specs/waste-collection.html)
+        1. [Waste collection]({{baseurl}}/specs/waste-collection.html)
 1. [Serialization](/specs/#serialization)
     1. [JSON schema and examples](/specs/#schema-and-examples)
     1. [Metadata serialization](/specs/#metadata-properties)

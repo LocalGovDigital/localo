@@ -7,3 +7,4 @@ exclude:
 - Rakefile
 - README.md
 - VERSION
+baseurl: Localo
