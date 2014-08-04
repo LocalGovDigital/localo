@@ -1,0 +1,8 @@
+{
+  "@id": "http://ns.localo.org/waste/paper",
+  "@type": "WasteItem",
+  "name": "paper",
+  "category": "mixed paper and cardboard",
+  "recycle": true,
+  "refuse": false,
+}

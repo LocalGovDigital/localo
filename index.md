@@ -57,8 +57,10 @@ Jump to a section below or start at the [beginning]({{ site.url }}/specs/).
 1. [Use cases & requirements]({{ site.url }}/specs/#use-cases-and-requirements)
 1. [Standard reuse]({{ site.url }}/specs/#standard-reuse)
 1. [Classes and properties]({{ site.url }}/specs/#classes-and-properties)
-    1. People and organizations
-        1. [Waste collection]({{ site.url }}/specs/waste-collection.html)
+    1. Waste collection
+        1. [Waste container]({{ site.url }}/specs/waste-container.html)
+        1. [Waste item]({{ site.url }}/specs/waste-item.html)
+    2. Planning applications
         2. [Planning application]({{ site.url }}/specs/planning-application.html)
 1. [Serialization](/specs/#serialization)
     1. [JSON schema and examples]({{ site.url }}/specs/#schema-and-examples)

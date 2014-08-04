@@ -1,0 +1,10 @@
+{
+  "@id": "http://ns.localo.org/waste/containers/1",
+  "@type": "WasteContainer",
+  "id": 1,
+  "name": "wheelie bin",
+  "size": "20L",
+  "color": "black",
+  "waste_type": "recycling",
+  "image": "http://www.localo.org/waste/images/container_1.png"
+}
