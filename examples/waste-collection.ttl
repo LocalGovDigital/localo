@@ -1,5 +1,0 @@
-@prefix localgov: <http://www.w3.org/ns/localgov#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-<http://example.com/waste-collection/example.ttl>
-  a localgov:WasteCollection;
-  rdf:value 128 .

@@ -1,0 +1,8 @@
+{% assign version_pages = (site.pages | sort:"version" | where: "category", version_category | where: "type", "spec" ) %}
+<ul>
+{% for vp in version_pages %}
+  {% ifchanged vp.version %}
+    <li><a href="{{ vp.category }}/v{{ vp.version }}/">Version {{ vp.version }}</a> {% if vp.phase %}<span class="label label-phase label-{{ vp.phase | downcase }}">{{ vp.phase }}</span>{% endif %}</li>
+  {% endifchanged %}
+{% endfor %}
+</ul>

@@ -1,0 +1,11 @@
+<ul class="nav nav-tabs no-js">
+  <li><a href="#schema">JSON Schema</a></li>
+  <li><a href="#context">JSON-LD Context</a></li>
+  <li class="active"><a href="#json">JSON</a></li>
+</ul>
+
+<div class="tab-content no-js">
+  <div class="tab-pane" id="schema" data-url="{{ page.category }}/v{{ page.version }}/schemas/{{ page.id }}.json"></div>
+  <div class="tab-pane" id="context" data-url="{{ page.category }}/v{{ page.version }}/contexts/{{ page.id }}.jsonld"></div>
+  <div class="tab-pane active" id="json" data-url="{{ page.category }}/v{{ page.version }}/examples/{{ page.id }}.json"></div>
+</div>

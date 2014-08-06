@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-{% include navigation.html %}
-
 <div class="row">
   <div class="col-md-2" role="navigation">
     <ul class="list-group">
@@ -16,6 +14,7 @@ layout: default
     </ul>
   </div>
   <div class="col-md-10">
+     <p class="lead">Version: {{ page.version }}</p>
 {{ content }}
   </div>
 </div>

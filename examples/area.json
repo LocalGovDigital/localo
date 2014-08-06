@@ -1,6 +1,0 @@
-{
-  "name": "Boston Ward 1",
-  "identifier": "ocd-division/country:us/state:ma/place:boston/ward:1",
-  "classification": "ward",
-  "parent_id": "boston"
-}

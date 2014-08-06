@@ -1,5 +1,39 @@
-url: http://localgovdigital.github.io/localo
-markdown: redcarpet
+safe:        true
+
+baseurl:     /localo
+
+source:      ./
+destination: ./_site
+plugins:     ./_plugins
+future:      true
+lsi:         false
+markdown:    kramdown
+highlighter: 
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "spec"
+    values:
+      layout: "class"
+  -
+    scope:
+      path: "waste"
+    values:
+      category: "waste"
+  -
+    scope:
+      path: "waste/v1"
+    values:
+      version: 1
+      phase: "Pre-Alpha"
+
 exclude:
 - src
 - CNAME
@@ -8,4 +42,22 @@ exclude:
 - Rakefile
 - README.md
 - VERSION
+- specs/index.md
 
+rdiscount:
+  extensions: []
+
+kramdown:
+  auto_ids: true,
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: true
+
+  coderay:
+    coderay_wrap: div
+    coderay_line_numbers: ''
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: style
