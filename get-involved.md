@@ -1,8 +1,9 @@
 ---
 title: Get involved
 ---
-Participation is free and open to anyone. These documents are **Working Drafts**. Their governance roughly follows the [W3C process](http://www.w3.org/community/about/agreements/).
+Participation is free and open to anyone.
 
-* Visit the [GitHub repository](https://github.com/LocalGovDigital/Localo/tree/gh-pages), discuss [open issues](https://github.com/LocalGovDigital/Localo/issues), and create pull requests
-
+* Discuss [open issues](https://github.com/LocalGovDigital/Localo/issues) and create pull requests
+* Edit the [wiki](https://github.com/LocalGovDigital/localo/wiki)
+* Tweet [@LGMakers](https://twitter.com/LGMakers)
 
