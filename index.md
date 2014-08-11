@@ -8,7 +8,7 @@ This project's goal is to author, through community consensus, **local governmen
 {% assign cat_spec_pages = (site.pages | sort:"category" | where: "type", "spec" ) %}
 
 <div class="row">
-  <div class="col-xs-4">
+  <div class="col-md-4">
     <nav>
       <h3>Contents</h3>
       <ol class="list-group">
@@ -21,7 +21,7 @@ This project's goal is to author, through community consensus, **local governmen
     </nav>
   </div>
 
-  <div class="col-xs-8">
+  <div class="col-md-8">
       {% for csp in cat_spec_pages %}
         {% if version_category != csp.category %}
           <h3 id="#{{ csp.category }}"><a href="{{ csp.category }}/">{{ csp.category | capitalize }}</a></h3>
