@@ -1,0 +1,13 @@
+{
+  "@id": "http://ns.localo.org/waste/recycling",
+  "@type": "WasteType",
+  "name": "recycling",
+  "allowed_items": [
+    "paper",
+    "cardboard"
+  ],
+  "disallowed_items": [
+    "pizza box",
+    "tetrapak"
+  ]
+}

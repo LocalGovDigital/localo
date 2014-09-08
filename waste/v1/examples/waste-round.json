@@ -1,0 +1,12 @@
+{
+  "@id": "http://ns.localo.org/waste/rounds/1",
+  "@type": "WasteRound",
+  "name": "Main street route",
+  "properties": [
+    123456789,
+    123456789
+  ],
+  "containers": [
+    "http://ns.localo.org/waste/containers/1"
+  ]
+}
