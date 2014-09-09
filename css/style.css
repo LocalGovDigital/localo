@@ -113,7 +113,7 @@ td {
 }
 
 /* Override Bootstrap */
-blockquote { 
+blockquote {
   padding-top: 0; /* 10px */
   padding-bottom: 0; /* 10px */
   padding-right: 0; /* 20px */
@@ -250,7 +250,8 @@ blockquote p {
 
 body
         {
-            font-family: Droid Sans, sans-serif;
+          font-size: 16px;
+            font-family: Arial, Droid Sans, sans-serif;
         }
         .navbar-lgdm {
             border: 0;
@@ -314,7 +315,7 @@ body
             padding-bottom: 4em;
             margin-bottom: 1em;
         }
-		
+
 		.label-pre-alpha
 		{
 			background-color: #912b88;

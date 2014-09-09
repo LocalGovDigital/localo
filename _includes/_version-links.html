@@ -1,9 +1,9 @@
 {% assign sorted_pages = (site.pages | where:"version", page.version | where: "category", page.category | where: "type", "spec" ) %}
-<ul>
+<table class="table table-striped">
 {% for p in sorted_pages %}
-    <li class="list-group-item">
-        <a href="{{ site.baseurl }}{{ p.url }}" title="The Localo spec for {{ p.title }}">{{ p.title }}</a>
-        {{ p.subtitle }}
-    </li>
+    <tr>
+        <td><a href="{{ site.baseurl }}{{ p.url }}" title="The Localo spec for {{ p.title }}">{{ p.title }}</a></td>
+        <td>{{ p.subtitle }}</td>
+    </tr>
 {% endfor %}
-</ul>
+</table>
