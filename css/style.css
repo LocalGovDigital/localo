@@ -10,14 +10,6 @@ ol p {
   margin: 0;
 }
 
-footer {
-  text-align: center;
-}
-
-.navbar {
-  margin-top: 1em;
-}
-
 .nav-tabs {
   margin-bottom: 1em;
 }
@@ -247,73 +239,77 @@ blockquote p {
 }
 
 
-
-body
-        {
-          font-size: 16px;
-            font-family: Arial, Droid Sans, sans-serif;
-        }
-        .navbar-lgdm {
-            border: 0;
-            border-radius: 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
-            background-color: #0277bb;
-            margin-top: 0;
-        }
-.navbar-lgdm .navbar-toggle .icon-bar
-{
-  background-color: #fff;
+body {
+    font-family: Oxygen, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6b7770;
 }
-.navbar-lgdm .navbar-toggle
-{
-  margin-top: 13px;
+p, li { 
+    line-height: 2em; }
+.navbar-app { border-radius: 0; border-left: 0; border-right: 0; }
+
+.navbar-brand { font-weight: 700; }
+
+.makers .navbar-head {
+  border-bottom: 10px solid #199ad2;
 }
-        .navbar-brand {
-            color: #fff;
-            font-size: 24px;
-            line-height: inherit;
-            margin-bottom: -1px;
-            height: auto;
-        }
 
-            .navbar-brand:hover {
-                color: #fff;
-                text-decoration: underline;
-            }
+.navbar-head .nav > li > a:hover,
+.navbar-head .nav > li > a:focus,
+.navbar-head .nav > li.active > a
+{
+    color: #fff;
+}
 
-        a {
-            color: #0277bb;
-        }
+.navbar-head .nav > li > a.localgovdigital:hover,
+.navbar-head .nav > li > a.localgovdigital:focus,
+.localgovdigital .navbar-head .nav > li.active
+{
+    background: #6b7770;
+}
 
-            a:hover {
-                color: #01476f;
-            }
-            .navbar-nav>li>a
-            {
-                color: #fff;
-            }
-            .navbar-lgdm .open > a,
-            .navbar-lgdm .open > a:hover,
-            .navbar-lgdm .open > a:focus,
-            .navbar-nav > li > a:hover
-            {
-                background-color: inherit;
-                text-decoration: underline;
-            }
-            .navbar-lgdm .navbar-nav
-            {
-                margin-top: 6px;
-            }
+.navbar-head .nav > li > a.localgovcamp:hover,
+.navbar-head .nav > li > a.localgovcamp:focus,
+.localgovcamp .navbar-head .nav > li.active
+{
+  background: #34ab49;
+}
+
+.navbar-head .nav > li > a.makers:hover,
+.navbar-head .nav > li > a.makers:focus,
+.makers .navbar-head .nav > li.active
+{
+  background: #1799d1;
+}
+
+.navbar-head .nav > li > a.ldbytes:hover,
+.navbar-head .nav > li > a.ldbytes:focus
+{
+  background: #d42128;
+}
+
+.navbar-head .nav > li > a.lgvoice:hover,
+.navbar-head .nav > li > a.lgvoice:focus
+{
+  background: #6b4a9e;
+}
+
+footer {
+  padding-top: 80px;
+  padding-bottom: 90px;
+  color: #555;
+  background: #f2f5f3;
+  margin-top: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+
         .page-header {
             margin-top: 0;
-        }
-
-        footer {
-            background: #eee;
-            margin-top: 5em;
-            padding-top: 2em;
-            padding-bottom: 4em;
-            margin-bottom: 1em;
         }
 
 		.label-pre-alpha

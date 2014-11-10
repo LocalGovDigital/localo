@@ -1,7 +1,6 @@
 ---
-title: About
+title: About Localo
 ---
-# About Localo
 
 This project is a [LocalGov Digital Makers](www.localgovdigital.info/localgov-digital-makers/) project.
 
