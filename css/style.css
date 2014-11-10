@@ -243,13 +243,13 @@ body {
     font-family: Oxygen, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #6b7770;
+    color: #454545;
 }
 p, li { 
     line-height: 2em; }
 .navbar-app { border-radius: 0; border-left: 0; border-right: 0; }
 
-.navbar-brand { font-weight: 700; }
+.navbar-brand { font-weight: 700; color: #212121; }
 
 .makers .navbar-head {
   border-bottom: 10px solid #199ad2;
