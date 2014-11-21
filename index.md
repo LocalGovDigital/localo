@@ -1,7 +1,7 @@
 ---
 title: Localo
 ---
-This project's goal is to author, through community consensus, **local government data specifications** relating to the services and information provided by local government. A related goal is to make it easier for civic developers to create additional software built on these standards.
+Localo is a [LocalGov Digital Makers](http://localgovdigital.info/localgov-digital-makers) project to create by community consensus **local government data specifications** relating to the services and information provided by local government.
 
 <iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/02__3UTqXmU?rel=0" frameborder="0" allowfullscreen></iframe>
 
