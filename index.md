@@ -1,31 +1,37 @@
 ---
 title: Localo
 ---
-Localo is a [LocalGov Digital Makers](http://localgovdigital.info/localgov-digital-makers) project to create by community consensus **local government data specifications** relating to the services and information provided by local government.
+<div class="page-header">
+    <h1>Welcome to Pipeline</h1>
+</div>
+
+<p class="lead">Localo is a <a href="http://localgovdigital.info/localgov-digital-makers">LocalGov Digital Makers</a> project to create by community consensus <strong>local government data and API specifications</strong> relating to the services and information provided by local government.</p>
+
+<div class="row">
+  <div class="col-md-9">
+
+  </div>
+  <div class="col-md-2 col-md-push-1">
+    <h2>Upcoming events</h2>
+<div class="list-group">
+  <a href="http://www.localdirect.gov.uk/event/local-digital-co-design-day-2/" class="list-group-item active">
+    <h4 class="list-group-item-heading">Local Digital Co-Design Day 2 | London</h4>
+    <p class="list-group-item-text">Friday 28 November @ 9:30 - 17:00</p>
+  </a>
+</div>
+  </div>
+</div>
+
+## What are data models and APIs?
+
+### Data models
+
+### APIs
+
+
+
+## Why bother?
 
 <iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/02__3UTqXmU?rel=0" frameborder="0" allowfullscreen></iframe>
 
-## Principles
 
-1. This project rigorously researches and studies existing specifications and reuses suitable existing work wherever possible. It looks for existing specifications that balance breadth of adoption with quality of modeling. It **prioritizes reuse over novelty**.
-
-1. This specification satisfies a broad range of use cases, without requiring an exhaustive vocabulary of terms. It **focuses on flexibility** to do more with fewer terms.
-
-1. A fact that many specifications overlook is that our knowledge of the world is imprecise and uncertain. This specification attempts, as much as possible, to make it easy to represent **real world data** while preserving clarity and meaning.
-
-## Process
-
-The high-level specification development process is as follows:
-
-1. Identify use cases and requirements for a specific service.
-2. Research existing specifications that fulfill the use cases and requirements.
-3. Author a specification and related documentation that respect the principles.
-4. Iteratively improve the specification.
-
-Specification development works by an open process and by rough consensus. Participation is open and free to all.
-
-
-
-## References
-
-* The [Popolo Specification](http://popoloproject.com/).
