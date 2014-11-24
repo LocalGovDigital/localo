@@ -10,7 +10,7 @@ title: Localo
 
   	<p>In local government we tend to buy line of business systems by service and for a specific task (e.g. Planning or Cleansing) and often from a big supplier. Typically they're not very open being either difficult and/or expensive to get data in or out which makes things difficult when we want to be able to integrate systems to allow end-to-end digital services which means users should be able to view current and correct information as well as transact in real-time. Councils also want to be able to evaluate performance which relies on being able to access appropriate data from their line of business systems. When access to the data within the line of business systems is possible, it's often bespoke. This means the other systems using data from the line of business systems would need to be updated if there was a change to, or replacement of, that system increasing cost and time required which potentially affects the viability of making the change.</p>
 
-  	<p>There are two parts to the project (<a href="about.html#principles">where the work hasn't be done already</a>).</p>
+  	<p>There are two parts to the project (<a href="about.html#principles">where the work hasn't been done already</a>).</p>
 
   	<p>The first is to specify the <strong>data models</strong>. Data models specify how to describe a <em>thing</em>. Taking a bin as an example the table below shows what some of the standard attributes might be:</p>
 
@@ -46,15 +46,15 @@ title: Localo
 		<li>Register your interest on <a href="http://pipeline.localgovdigital.info/">Pipeline</a></li>
 		<li>Post on the <a href="http://localgovdigital.discoursehosting.net/">LocalGov Digital Talk</a></li>
 		<li>Tweet <a href="https://twitter.com/LGMakers">@LGMakers</a></li>
-		<li>Attend an event</l1>
+		<li><a href="#events">Attend an event</a></li>
 	</ul>
 
-    <h3>Upcoming Events</h3>
+    	<h3 id="events">Upcoming Events</h3>
 	<div class="list-group">
-		  <a href="http://www.localdirect.gov.uk/event/local-digital-co-design-day-2/" class="list-group-item">
-				<h4 class="list-group-item-heading">Local Digital Co-Design Day 2 | London</h4>
-				<p class="list-group-item-text">Friday 28 November @ 9:30 - 17:00</p>
-		  </a>
+		<a href="http://www.localdirect.gov.uk/event/local-digital-co-design-day-2/" class="list-group-item">
+			<h4 class="list-group-item-heading">Local Digital Co-Design Day 2 | London</h4>
+			<p class="list-group-item-text">Friday 28 November @ 9:30 - 17:00</p>
+		</a>
 	</div>
   </div>
 </div>
