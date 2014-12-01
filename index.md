@@ -43,7 +43,7 @@ title: Localo
   <div class="col-md-4 col-md-push-1">
 	<h3>Get involved</h3>
 	<ul class="list-unstyled">
-		<li>Register your interest on <a href="http://pipeline.localgovdigital.info/">Pipeline</a></li>
+		<li>Register your interest on <a href="http://pipeline.localgovdigital.info/wiki/44/localo">Pipeline</a></li>
 		<li>Post on the <a href="http://localgovdigital.discoursehosting.net/">LocalGov Digital Talk</a></li>
 		<li>Tweet <a href="https://twitter.com/LGMakers">@LGMakers</a></li>
 		<li><a href="#events">Attend an event</a></li>
@@ -51,10 +51,13 @@ title: Localo
 
     	<h3 id="events">Upcoming Events</h3>
 	<div class="list-group">
-		<a href="http://www.localdirect.gov.uk/event/local-digital-co-design-day-2/" class="list-group-item">
+		<!-- a href="http://www.localdirect.gov.uk/event/local-digital-co-design-day-2/" class="list-group-item">
 			<h4 class="list-group-item-heading">Local Digital Co-Design Day 2 | London</h4>
 			<p class="list-group-item-text">Friday 28 November @ 9:30 - 17:00</p>
-		</a>
+		</a -->
+		<span class="list-group-item">
+		There are no upcoming events at the moment.
+		</span>
 	</div>
   </div>
 </div>
