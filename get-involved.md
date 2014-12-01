@@ -3,7 +3,7 @@ title: Get involved
 ---
 Participation is free and open to anyone.
 
-* Register your interest on [Pipeline](http://pipeline.localgovdigital.info/)
+* Register your interest on [Pipeline](http://pipeline.localgovdigital.info/wiki/44/localo)
 * Post on the [LocalGov Digital Talk](http://localgovdigital.discoursehosting.net/)
 * Tweet [@LGMakers](https://twitter.com/LGMakers)
 * [Attend an event](index.html#events)
