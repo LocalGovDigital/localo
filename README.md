@@ -8,12 +8,23 @@ This project’s goal is to author, through community consensus, local governmen
 
 ## Development
 
-To run the documentation website locally:
+### Build HTML from RAML
+
+Install the raml2html tool:
+
+    npm i -g raml2html
+
+Run the tool:
+
+    rake
+
+### Running Jekyll locally
 
     git clone https://github.com/LocalGovDigital/Localo.git
     git co gh-pages
     bundle
     bundle exec jekyll serve -w
+
 
 ## Bugs? Questions?
 

@@ -1,4 +1,4 @@
-safe:        true
+# safe:        true
 
 baseurl:     /localo
 
@@ -8,7 +8,7 @@ plugins:     ./_plugins
 future:      true
 lsi:         false
 markdown:    kramdown
-highlighter: 
+highlighter:
 
 defaults:
   -
@@ -43,6 +43,7 @@ exclude:
 - README.md
 - VERSION
 - specs/index.md
+- raml
 
 rdiscount:
   extensions: []

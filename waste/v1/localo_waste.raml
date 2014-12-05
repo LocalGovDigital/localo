@@ -1,0 +1,113 @@
+#%RAML 0.8
+---
+title: Localo Waste
+version: v1
+baseUri: http://api.council.gov.uk/waste
+/services:
+  displayName: Services
+  get:
+    description: Get a list of waste services
+  /{serviceId}:
+    displayName: Service ID
+    get:
+      description: Get a single service
+      responses:
+        200:
+          body:
+            application/json:
+              schema: |
+                {
+                  "$schema": "http://json-schema.org/draft-03/schema",
+                  "properties": {
+                    "id": {
+                      "required": true,
+                      "type": "integer"
+                    },
+                    "name": {
+                      "required": false,
+                      "type": "string"
+                    }
+                  },
+                  "required": true,
+                  "type": "object"
+                }
+              example: |
+                {
+                  id: 1
+                  name: "Recycling service"
+                  categories: {
+                    "http://registry.gov.uk/waste/services/paper_and_card"
+                  }
+                  frequency: "weekly"
+                  esd_id: "http://id.esd.org.uk/service/524"
+                  description: "Please put your recycling box on the street."
+                }
+
+/collections:
+  displayName: collections
+  get:
+    description: List of collections
+    queryParameters:
+      uprn:
+        type: string
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              [
+                {
+                  id: 1
+                  service_id: "http://council.gov.uk/waste/service/recycling"
+                  schedule: {
+                    day: "TU"
+                    frequency: "WEEKLY"
+                    interval: 1
+                  }
+                  container_types: [
+                    {
+                      id: 1
+                      type: "wheeled bin"
+                      size: "20L"
+                      color: "green"
+                    }
+                  ]
+                }
+              ]
+
+  /{collectionId}:
+    displayName: collectionId
+    get:
+      description: Get a single collection
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  id: 1
+                  service_id: "http://council.gov.uk/waste/service/recycling"
+                  schedule: {
+                    day: "TU"
+                    frequency: "WEEKLY"
+                    interval: 1
+                  }
+                  container_types: [
+                    {
+                      id: 1
+                      type: "wheeled bin"
+                      size: "20L"
+                      color: "green"
+                    }
+                  ]
+                }
+
+  /requests:
+    displayName: requests
+    post:
+      description: Request the collection of an item
+
+/collection-points:
+  displayName: Collection points
+  get:
+    description: Get a list of collection points
