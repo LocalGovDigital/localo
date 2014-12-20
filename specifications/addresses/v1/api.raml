@@ -1,0 +1,100 @@
+#%RAML 0.8
+---
+title: Localo Addresses
+version: 1
+
+baseUri: http://example.gov.uk/api/{version}
+
+/addresses:
+  displayName: Addresses
+  get:
+    description: Get a list of addresses.
+    queryParameters:
+      usrn:
+        displayName: USRN
+        description: Filter by USRN.
+        type: integer
+      udpn:
+        displayName: UDPN
+        description: Filter by UDPN.
+        type: integer
+      nearby:
+        displayName: Nearby filter
+        description: Filter what is nearby based on a bounding circle.
+        type: string
+        pattern: (\d+,\d+,\d+)
+      nearest:
+        displayName: Nearest filter
+        description: Filter to the nearest point
+        type: string
+        pattern: (\d+,\d+,\d+)
+    responses:
+      200:
+        body:
+          application/json:
+            schema: |
+              {
+                "$schema": "http://json-schema.org/draft-03/schema",
+                "properties": {
+                  "uprn": {
+                    "required": true,
+                    "type": "integer"
+                  }
+                },
+                "required": true,
+                "type": "object"
+              }
+            example: |
+              [
+                {
+                  "@type": "LocalAuthorityAddress",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "5 Acacia Avenue",
+                    "addressRegion": "London",
+                    "postalCode": "AB1 2CD",
+                  }
+                  "uprn": 12345678123456781234567812345678,
+                  "usrn": "",
+                  "ward": "",
+                  "parish": "",
+                  "authority_code": "123",
+                  "geo": {
+                    "latitude": "",
+                    "longitude": ""
+                  }
+                  "easting": 375963.7,
+                  "northing": 162621.5,
+                }
+              ]
+
+
+  /{uprn}:
+      get:
+        description: Get a single address by its UPRN.
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                  {
+                    "@type": "LocalAuthorityAddress",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "streetAddress": "5 Acacia Avenue",
+                      "addressRegion": "London",
+                      "postalCode": "AB1 2CD",
+                    }
+                    "uprn": "12345678123456781234567812345678",
+                    "usrn": "",
+                    "ward": "",
+                    "parish": "",
+                    "authority_code": "123",
+                    "geo": {
+                      "latitude": "",
+                      "longitude": ""
+                    }
+                    "easting": 375963.7,
+                    "northing": 162621.5,
+                  }
+

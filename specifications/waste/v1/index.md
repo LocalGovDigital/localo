@@ -1,5 +1,6 @@
 ---
-title: Waste v1
+title: Waste
+api_version: v1
 type: index
 ---
 
@@ -9,4 +10,4 @@ type: index
 
 ## API specification
 
-{% include _localo_waste.html %}
+{% include _waste_api.html %}

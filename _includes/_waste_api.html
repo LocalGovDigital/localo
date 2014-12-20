@@ -1,0 +1,62 @@
+<div class="col-md-9"><div class="page-header"></div><div class="panel panel-default"><div class="panel-heading"><h3 id="_services" class="panel-title">Services</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel__services"><span class="parent"></span>/services</a> <span class="methods"><a href="#" data-toggle="modal" data-target="#_services_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel__services" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div><div><div><div class="alert alert-info"><p>Get a list of waste services</p></div><ul class="nav nav-tabs"><li class="active"><a href="#_services_get_request" data-toggle="tab">Request</a></li></ul><div class="tab-content"><div class="tab-pane active" id="_services_get_request"></div></div></div></div></div></div></div></div></div><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel__services__serviceId_"><span class="parent">/services</span>/{serviceId}</a> <span class="methods"><a href="#" data-toggle="modal" data-target="#_services__serviceId__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel__services__serviceId_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div><div><div><div class="alert alert-info"><p>Get a single service</p></div><ul class="nav nav-tabs"><li class="active"><a href="#_services__serviceId__get_request" data-toggle="tab">Request</a></li><li><a href="#_services__serviceId__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="_services__serviceId__get_request"><h3>URI Parameters</h3><ul><li><strong>serviceId</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="_services__serviceId__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "properties": {
+    "id": {
+      "required": true,
+      "type": "integer"
+    },
+    "name": {
+      "required": false,
+      "type": "string"
+    }
+  },
+  "required": true,
+  "type": "object"
+}
+</code></pre><p><strong>Example</strong>:</p><pre><code>{
+  id: 1
+  name: "Recycling service"
+  categories: {
+    "http://registry.gov.uk/waste/services/paper_and_card"
+  }
+  frequency: "weekly"
+  esd_id: "http://id.esd.org.uk/service/524"
+  description: "Please put your recycling box on the street."
+}
+</code></pre></div></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="_collections" class="panel-title">Collections</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel__collections"><span class="parent"></span>/collections</a> <span class="methods"><a href="#" data-toggle="modal" data-target="#_collections_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel__collections" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div><div><div><div class="alert alert-info"><p>List of collections</p></div><ul class="nav nav-tabs"><li class="active"><a href="#_collections_get_request" data-toggle="tab">Request</a></li><li><a href="#_collections_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="_collections_get_request"><h3>Query Parameters</h3><ul><li><strong>uprn</strong>: <em>(string)</em></li></ul></div><div class="tab-pane" id="_collections_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>[
+  {
+    id: 1
+    service_id: "http://council.gov.uk/waste/service/recycling"
+    schedule: {
+      day: "TU"
+      frequency: "WEEKLY"
+      interval: 1
+    }
+    container_types: [
+      {
+        id: 1
+        type: "wheeled bin"
+        size: "20L"
+        color: "green"
+      }
+    ]
+  }
+]
+</code></pre></div></div></div></div></div></div></div></div></div><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel__collections__collectionId_"><span class="parent">/collections</span>/{collectionId}</a> <span class="methods"><a href="#" data-toggle="modal" data-target="#_collections__collectionId__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel__collections__collectionId_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div><div><div><div class="alert alert-info"><p>Get a single collection</p></div><ul class="nav nav-tabs"><li class="active"><a href="#_collections__collectionId__get_request" data-toggle="tab">Request</a></li><li><a href="#_collections__collectionId__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="_collections__collectionId__get_request"><h3>URI Parameters</h3><ul><li><strong>collectionId</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="_collections__collectionId__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>{
+  id: 1
+  service_id: "http://council.gov.uk/waste/service/recycling"
+  schedule: {
+    day: "TU"
+    frequency: "WEEKLY"
+    interval: 1
+  }
+  container_types: [
+    {
+      id: 1
+      type: "wheeled bin"
+      size: "20L"
+      color: "green"
+    }
+  ]
+}
+</code></pre></div></div></div></div></div></div></div></div></div><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel__collections_requests"><span class="parent">/collections</span>/requests</a> <span class="methods"><a href="#" data-toggle="modal" data-target="#_collections_requests_post"><span class="badge badge_post">post</span></a></span></h4></div><div id="panel__collections_requests" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div><div><div><div class="alert alert-info"><p>Request the collection of an item</p></div><ul class="nav nav-tabs"><li class="active"><a href="#_collections_requests_post_request" data-toggle="tab">Request</a></li></ul><div class="tab-content"><div class="tab-pane active" id="_collections_requests_post_request"></div></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="_collection_points" class="panel-title">Collection points</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel__collection_points"><span class="parent"></span>/collection-points</a> <span class="methods"><a href="#" data-toggle="modal" data-target="#_collection_points_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel__collection_points" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div><div><div><div class="alert alert-info"><p>Get a list of collection points</p></div><ul class="nav nav-tabs"><li class="active"><a href="#_collection_points_get_request" data-toggle="tab">Request</a></li></ul><div class="tab-content"><div class="tab-pane active" id="_collection_points_get_request"></div></div></div></div></div></div></div></div></div></div></div></div></div>

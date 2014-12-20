@@ -10,6 +10,13 @@ lsi:         false
 markdown:    kramdown
 highlighter:
 
+specifications:
+  - name: waste
+    version: v1
+  - name: addresses
+    version: v1
+
+
 defaults:
   -
     scope:

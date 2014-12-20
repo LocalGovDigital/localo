@@ -1,0 +1,54 @@
+<div class="col-md-9"><div class="page-header"></div><div class="panel panel-default"><div class="panel-heading"><h3 id="_addresses" class="panel-title">Addresses</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel__addresses"><span class="parent"></span>/addresses</a> <span class="methods"><a href="#" data-toggle="modal" data-target="#_addresses_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel__addresses" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div><div><div><div class="alert alert-info"><p>Get a list of addresses.</p></div><ul class="nav nav-tabs"><li class="active"><a href="#_addresses_get_request" data-toggle="tab">Request</a></li><li><a href="#_addresses_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="_addresses_get_request"><h3>Query Parameters</h3><ul><li><strong>USRN</strong>: <em>(integer)</em><p>Filter by USRN.</p></li><li><strong>UDPN</strong>: <em>(integer)</em><p>Filter by UDPN.</p></li><li><strong>Nearby filter</strong>: <em>(string)</em><p>Filter what is nearby based on a bounding circle.</p></li><li><strong>Nearest filter</strong>: <em>(string)</em><p>Filter to the nearest point</p></li></ul></div><div class="tab-pane" id="_addresses_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Schema</strong>:</p><pre><code>{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "properties": {
+    "uprn": {
+      "required": true,
+      "type": "integer"
+    }
+  },
+  "required": true,
+  "type": "object"
+}
+</code></pre><p><strong>Example</strong>:</p><pre><code>[
+  {
+    "@type": "LocalAuthorityAddress",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "5 Acacia Avenue",
+      "addressRegion": "London",
+      "postalCode": "AB1 2CD",
+    }
+    "uprn": 12345678123456781234567812345678,
+    "usrn": "",
+    "ward": "",
+    "parish": "",
+    "authority_code": "123",
+    "geo": {
+      "latitude": "",
+      "longitude": ""
+    }
+    "easting": 375963.7,
+    "northing": 162621.5,
+  }
+]
+</code></pre></div></div></div></div></div></div></div></div></div><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel__addresses__uprn_"><span class="parent">/addresses</span>/{uprn}</a> <span class="methods"><a href="#" data-toggle="modal" data-target="#_addresses__uprn__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel__addresses__uprn_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div><div><div><div class="alert alert-info"><p>Get a single address by its UPRN.</p></div><ul class="nav nav-tabs"><li class="active"><a href="#_addresses__uprn__get_request" data-toggle="tab">Request</a></li><li><a href="#_addresses__uprn__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="_addresses__uprn__get_request"><h3>URI Parameters</h3><ul><li><strong>uprn</strong>: <em>required (string)</em></li></ul></div><div class="tab-pane" id="_addresses__uprn__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>{
+  "@type": "LocalAuthorityAddress",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "5 Acacia Avenue",
+    "addressRegion": "London",
+    "postalCode": "AB1 2CD",
+  }
+  "uprn": "12345678123456781234567812345678",
+  "usrn": "",
+  "ward": "",
+  "parish": "",
+  "authority_code": "123",
+  "geo": {
+    "latitude": "",
+    "longitude": ""
+  }
+  "easting": 375963.7,
+  "northing": 162621.5,
+}
+</code></pre></div></div></div></div></div></div></div></div></div></div></div></div></div>
