@@ -45,7 +45,7 @@
                   <div class="alert alert-info">{{md description}}</div>
 
                   <!-- Nav tabs -->
-                  <ul class="nav nav-tabs">
+                  <!--<ul class="nav nav-tabs">
                     <li class="active">
                       <a href="#{{../uniqueId}}_{{method}}_request" data-toggle="tab">Request</a>
                     </li>
@@ -54,11 +54,11 @@
                         <a href="#{{../../uniqueId}}_{{method}}_response" data-toggle="tab">Response</a>
                       </li>
                     {{/if}}
-                  </ul>
+                  </ul>-->
 
                   <!-- Tab panes -->
-                  <div class="tab-content">
-                    <div class="tab-pane active" id="{{../uniqueId}}_{{method}}_request">
+                  <!--<div class="tab-content">
+                    <div class="tab-pane active" id="{{../uniqueId}}_{{method}}_request">-->
                       {{#if ../allUriParameters}}
                         <h3>URI Parameters</h3>
                         <ul>
@@ -110,7 +110,7 @@
                           {{/if}}
                         {{/each}}
                       {{/if}}
-                    </div>
+                    <!--</div>-->
 
                     {{#if responses}}
                       <div class="tab-pane" id="{{../../uniqueId}}_{{method}}_response">
@@ -146,7 +146,7 @@
                         {{/each}}
                       </div>
                     {{/if}}
-                  </div>
+                  <!--</div>-->
                 </div>
               </div>
             </div>
