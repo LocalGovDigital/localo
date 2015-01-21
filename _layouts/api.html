@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title and page.title != 'Localo' %}{{ page.title }} — {% endif %} Localo: Data standards for local government</title>
+  <meta name="description" content="A data specification for local government data">
+  <base href="{{ site.baseurl }}/">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+  <link href="//fonts.googleapis.com/css?family=Oxygen:400,700,300" rel="stylesheet">
+  <link rel="stylesheet" href="css/highlight.github.css">
+  <link rel="stylesheet" href="css/github.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/modernizr.min.js"></script>
+
+
+
+    <style>
+        .hljs {
+            background: transparent;
+        }
+        .parent {
+            color: #999;
+        }
+        .list-group-item > .badge {
+            float: none;
+            margin-right: 6px;
+        }
+        .panel-title > .methods {
+            float: right;
+        }
+        .badge {
+            border-radius: 0;
+            text-transform: uppercase;
+            width: 70px;
+            font-weight: normal;
+            color: #f3f3f6;
+            line-height: normal;
+        }
+        .badge_get {
+            background-color: #63a8e2;
+        }
+        .badge_post {
+            background-color: #6cbd7d;
+        }
+        .badge_put {
+            background-color: #22bac4;
+        }
+        .badge_delete {
+            background-color: #d26460;
+        }
+        .list-group, .panel-group {
+            margin-bottom: 0;
+        }
+        .panel-group .panel+.panel-white {
+            margin-top: 0;
+        }
+        .panel-group .panel-white {
+            border-bottom: 1px solid #F5F5F5;
+            border-radius: 0;
+        }
+        .panel-white:last-child {
+            border-bottom-color: white;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+        .panel-white .panel-heading {
+            background: white;
+        }
+        .tab-pane ul {
+            padding-left: 2em;
+        }
+        .tab-pane h2 {
+            font-size: 1.2em;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #ddd;
+        }
+        .tab-pane h3 {
+            font-size: 1.1em;
+        }
+        .tab-content {
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+        }
+        #sidebar {
+            margin-top: 30px;
+        }
+        .top-resource-description {
+            border-bottom: 1px solid #ddd;
+            background: #fcfcfc;
+            padding: 15px 15px 0 15px;
+            margin: -15px -15px 10px -15px;
+        }
+        .resource-description {
+            border-bottom: 1px solid #fcfcfc;
+            background: #fcfcfc;
+            padding: 15px 15px 0 15px;
+            margin: -15px -15px 10px -15px;
+        }
+        .list-group .badge {
+            float: left;
+        }
+        .method_description {
+            margin-left: 85px;
+        }
+        .method_description p:last-child {
+            margin: 0;
+        }
+        .list-group-item {
+            cursor: pointer;
+        }
+        .list-group-item:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+
+</head>
+<body class="makers {{ page.id }}-page">
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <nav class="navbar-head" role="navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="navbar-brand" href="http://localgovdigital.info"><img src="http://localgovdigital.info/media/1005/lgd_logo.png" alt="LocalGov Digital Logo" height="25"></a>
+                    <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs" role="tablist">
+                        <li role="presentation"><a href="http://localgovdigital.info/" class="localgovdigital">LocalGov Digital</a></li>
+                        <li role="presentation"><a href="http://localgovdigital.info/localgovcamp/" class="localgovcamp">LocalGovCamp</a></li>
+                        <li role="presentation"><a href="http://localgovdigital.info/local-democracy-bytes/" class="ldbytes">Local Democracy Bytes</a></li>
+                        <li role="presentation" class="active"><a href="http://localgovdigital.info/localgov-digital-makers/" class="makers">LocalGov Makers</a></li>
+                        <li role="presentation"><a href="http://localgovdigital.info/localgov-digital-voice/" class="lgvoice">LocalGov Voice</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-app navbar-default" role="navigation">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{{ site.baseurl }}/">Localo</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="specifications.html">Specifications</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="get-involved.html">Get involved</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        {{ content }}
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Localo is a <a href="http://localgovdigital.info/localgov-digital-makers">LocalGov Digital Makers</a> project.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="js/highlight.pack.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>//hljs.initHighlightingOnLoad();</script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+  $('pre code').each(function(i, block) {
+    console.log('code');
+    console.log(block);
+    hljs.highlightBlock(block);
+  });
+});
+        // $(document).ready(function() {
+        //     $('.page-header pre code, .top-resource-description pre code').each(function(i, block) {
+        //         // hljs.highlightBlock(block);
+        //     });
+
+        //     $('[data-toggle]').click(function() {
+        //         var selector = $(this).data('target') + ' pre code';
+        //         $(selector).each(function(i, block) {
+        //             // hljs.highlightBlock(block);
+        //         });
+        //     });
+        // });
+    </script>
+</body>
+</html>

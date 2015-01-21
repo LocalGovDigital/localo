@@ -245,7 +245,7 @@ body {
     font-weight: 400;
     color: #454545;
 }
-p, li { 
+p, li {
     line-height: 2em; }
 .navbar-app { border-radius: 0; border-left: 0; border-right: 0; }
 
@@ -332,3 +332,19 @@ h1, h2, h3, h4, h5, h6 {
 		{
 			background-color: #bfc1c3;
 		}
+
+
+
+
+
+#sidebar {
+  position: fixed;
+  width: 150px;
+  overflow-y: hidden;
+  top: 100px;
+  bottom: 0;
+}
+
+#content {
+  margin-left: 170px;
+}

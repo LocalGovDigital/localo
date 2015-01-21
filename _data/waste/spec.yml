@@ -1,0 +1,271 @@
+#%RAML 0.8
+---
+title: Localo Waste
+version: v0.1
+baseUri: http://api.council.gov.uk/waste
+/services:
+  displayName: Services
+  get:
+    description: Get a list of waste services.
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              [
+                {
+                  "id": 1,
+                  "name": "Recycling service",
+                  "categories": [
+                    "http://registry.gov.uk/waste/services/paper_and_card"
+                  ],
+                  "frequency": "weekly",
+                  "esd_id": "http://id.esd.org.uk/service/524",
+                  "description": "Please put your recycling box on the street."
+                }
+              ]
+  /{serviceId}:
+    displayName: Single service
+    get:
+      description: Get a single service.
+      responses:
+        200:
+          body:
+            application/json:
+              schema: |
+                {
+                  "$schema": "http://json-schema.org/draft-03/schema",
+                  "properties": {
+                    "id": {
+                      "required": true,
+                      "type": "integer"
+                    },
+                    "name": {
+                      "required": false,
+                      "type": "string"
+                    }
+                  },
+                  "required": true,
+                  "type": "object"
+                }
+              example: |
+                {
+                  "id": 1,
+                  "name": "Recycling service",
+                  "categories": [
+                    "http://registry.gov.uk/waste/services/paper_and_card"
+                  ],
+                  "frequency": "weekly",
+                  "esd_id": "http://id.esd.org.uk/service/524",
+                  "description": "Please put your recycling box on the street."
+                }
+
+/collections:
+  displayName: Collections
+  get:
+    description: Get a list of collections.
+    queryParameters:
+      uprn:
+        type: string
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              [
+                {
+                  "id": 1,
+                  "service_id": "http://council.gov.uk/waste/service/recycling",
+                  "schedule": {
+                    "day": "TU",
+                    "frequency": "WEEKLY",
+                    "interval": 1
+                  },
+                  "container_types": [
+                    {
+                      "id": 1,
+                      "type": "wheeled bin",
+                      "size": "20L",
+                      "color": "green"
+                    }
+                  ]
+                }
+              ]
+
+  /{collectionId}:
+    displayName: A single collection
+    get:
+      description: Get a single collection.
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  "id": 1,
+                  "service_id": "http://council.gov.uk/waste/service/recycling",
+                  "schedule": {
+                    "day": "TU",
+                    "frequency": "WEEKLY",
+                    "interval": 1
+                  },
+                  "container_types": [
+                    {
+                      "id": 1,
+                      "type": "wheeled bin",
+                      "size": "20L",
+                      "color": "green"
+                    }
+                  ]
+                }
+  /requests:
+    displayName: Collection requests
+    post:
+      description: Request the collection of an item.
+
+/categories:
+  displayName: Categories
+  description: Categories of resources.
+  get:
+    description: Get a list of categories.
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              [
+                {
+                  "id": 1,
+                  "name": "Paper",
+                  "description": "",
+                  "image": ""
+                }
+              ]
+  /{categoryId}:
+    description: A category.
+    get:
+      description: Get a single category.
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                [
+                  {
+                    "id": 1,
+                    "name": "Paper",
+                    "description": "",
+                    "image": "",
+                    "parent_id": 3,
+                    "waste_stream": {
+                      "@type": "WrapWasteStream",
+                      "color": "#a1b2c3",
+                      "portrait_1": "",
+                      "landscape_1": "",
+                      "portrait_2": "",
+                      "landscape_2": "",
+                      "portrait_3": "",
+                      "landscape_3": "",
+                    }
+                  }
+                ]
+
+/collection-points:
+  displayName: Collection points
+  get:
+    description: Get a list of collection points.
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              [
+                {
+                  "id": 1,
+                  "type": "Communal residential",
+                  "location": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 1.1,
+                    "longitude": 50.0
+                  },
+                  "propeties": [
+                    "1234567890",
+                    "1234567890"
+                  ],
+                  "containers": [
+                  ]
+                }
+              ]
+
+/container-types:
+  displayName: Container types
+  description: Types of containers
+  get:
+    description: Get a list of container types.
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              [
+                {
+                  "id": 1,
+                  "size": 10,
+                  "color": "blue",
+                  "type": "wheelie bin"
+                }
+              ]
+  /{containerTypeId}:
+    description: A single container type.
+    get:
+      description: Get a single container type.
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  "id": 1,
+                  "size": 10,
+                  "color": "blue",
+                  "type": "wheelie bin"
+                }
+
+/methods:
+  displayName: Processing methods
+  description: Ways in which resources or waste can be handled.
+  get:
+    description: Get a list of methods.
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              [
+                {
+                  "id": 1,
+                  "name": "Recycling",
+                  "description": "",
+                  "stage": {
+                    "@type": "WasteHierarchyStage",
+                    "id": "recycle",
+                    "name": "Recycle",
+                    "position": 3,
+                    "description": "Any activity that includes the collection of used, reused, or unused items that would otherwise be considered waste, then remanufacturing the recycled raw materials into new products."
+                  }
+                },
+                {
+                  "id": 2,
+                  "name": "Landfill",
+                  "description": "Burying waste into the ground.",
+                  "stage": {
+                    "@type": "WasteHierarchyStage",
+                    "id": "disposal",
+                    "name": "Disposal",
+                    "position": 5,
+                    "description": "Disposal is any operation that involves the dumping and incineration of waste without energy recovery."
+                  }
+                }
+              ]
+
+

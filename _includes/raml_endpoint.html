@@ -1,0 +1,49 @@
+
+
+{% for pn in include.endpoint %}
+
+{% assign path = pn[0] %}
+{% assign data = pn[1] %}
+{% assign fullpath = include.rootpath | append:path %}
+
+{% if path contains '/' %}
+
+<h2 id="{{ data.displayName | downcase | escape | replace:' ','-' }}">{{ data.displayName }}</h2>
+
+<code>{{ fullpath }}</code>
+
+<!-- Iterate over methods -->
+{% assign methods = 'get,post' | split:',' %}
+{% for method in methods %}
+
+{% if data.[method] != null %}
+<h3>{{ method | upcase }}</h3>
+{{ data.[method].description }}
+
+{% if data.[method].queryParameters != null %}
+<h4>Query parameters</h4>
+<ul>
+  {% for param in data.get.queryParameters %}
+  <li><code>{{ param[0] }}</code>: {{ param[1].type }}</li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+{% if data.[method].responses[200] != null %}
+<h4>Response</h4>
+{% highlight javascript %}
+{{ data.[method].responses[200].body['application/json'].example }}
+{% endhighlight %}
+{% endif %}
+
+{% endif %}
+{% endfor %}
+<!-- Iterate over methods end -->
+
+
+{% include raml_endpoint.html endpoint=data rootpath=fullpath %}
+
+{% endif %}
+
+{% endfor %}
+
